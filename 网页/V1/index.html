@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#060d18">
+  <title>ORBIT · 软件开发工程师简历 · 交互 V1</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <a class="skip" href="#content">跳到简历内容</a>
+  <header class="header">
+    <a class="brand" href="#about" aria-label="ORBIT 简历首页"><span class="brand-icon">◇</span> ORBIT<span class="brand-sub">个人简历 / V1</span></a>
+    <nav aria-label="简历模块">
+      <button data-page="0" aria-current="page"><span>01</span> 简介</button>
+      <button data-page="1"><span>02</span> 教育</button>
+      <button data-page="2"><span>03</span> 项目</button>
+      <button data-page="3"><span>04</span> 技能</button>
+      <button data-page="4"><span>05</span> 联系</button>
+    </nav>
+  </header>
+  <main>
+    <div class="identity"><span class="status-dot"></span> 姓名待填写 <span class="divider">/</span> 软件开发工程师</div>
+    <section class="stage" aria-label="交互式简历">
+      <div class="side-caption"><span>INTERACTIVE RESUME</span><span>探索我的五个切面</span></div>
+      <div class="stage-index" aria-hidden="true"><span id="large-index">01</span><small>/ 05</small></div>
+      <div class="cube-stage">
+        <canvas id="world" aria-hidden="true"></canvas>
+        <button id="cube-button" aria-label="转动魔方，查看教育背景"><span class="cube-fallback" hidden>◇</span></button>
+        <p class="cube-hint"><span>↗</span> 点击魔方，切换模块 <span class="hint-line"></span></p>
+      </div>
+      <div class="carousel-scene" id="content" tabindex="-1">
+        <div class="orbit-shell" aria-hidden="true"><div class="orbit-top"></div><div class="orbit-bottom"></div></div>
+        <div class="carousel" id="carousel">
+          <article class="panel active" id="about" aria-labelledby="title-about">
+            <div class="panel-top"><span>01 / ABOUT ME</span><span class="panel-symbol">◈</span></div>
+            <h1 id="title-about">把想法，<br>写成<span class="accent">可用的作品。</span></h1>
+            <p>你好，我是<span class="placeholder">姓名待填写</span>。<br>这是一份面向软件开发工程师岗位的交互式简历。</p>
+            <div class="panel-bottom"><span>本科 · 软件工程 · 毕业时间待填写</span><button data-page="2" class="text-button">探索项目 <span>↗</span></button></div>
+          </article>
+          <article class="panel" id="education" aria-labelledby="title-education" inert aria-hidden="true">
+            <div class="panel-top"><span>02 / EDUCATION</span><span class="panel-symbol">⌘</span></div>
+            <h2 id="title-education">学习的<span class="accent">起点。</span></h2>
+            <div class="record"><span class="record-label">学校与时间</span><h3>学校名称待填写</h3><p>软件工程 · 本科<br>入学及毕业时间待填写</p></div>
+            <div class="panel-bottom"><span>相关课程、奖项与成绩按实际情况补充</span></div>
+          </article>
+          <article class="panel" id="projects" aria-labelledby="title-projects" inert aria-hidden="true">
+            <div class="panel-top"><span>03 / SELECTED WORK</span><span class="panel-symbol">⌑</span></div>
+            <h2 id="title-projects">用作品<span class="accent">说话。</span></h2>
+            <div class="project-list"><div><span class="record-label">PROJECT 01</span><h3>项目名称待填写</h3><p>解决的问题、本人职责与技术方案待补充。</p></div><div><span class="record-label">PROJECT 02</span><h3>项目名称待填写</h3><p>成果与演示链接待补充，数据需有实际依据。</p></div></div>
+          </article>
+          <article class="panel" id="skills" aria-labelledby="title-skills" inert aria-hidden="true">
+            <div class="panel-top"><span>04 / TOOLKIT</span><span class="panel-symbol">✳</span></div>
+            <h2 id="title-skills">构建作品的<span class="accent">工具。</span></h2>
+            <dl class="skill-list"><div><dt>编程语言</dt><dd>待填写实际掌握的语言</dd></div><div><dt>框架与技术</dt><dd>待填写，并对应具体项目</dd></div><div><dt>开发与协作</dt><dd>待填写实际使用的工具</dd></div></dl>
+          </article>
+          <article class="panel" id="contact" aria-labelledby="title-contact" inert aria-hidden="true">
+            <div class="panel-top"><span>05 / GET IN TOUCH</span><span class="panel-symbol">↗</span></div>
+            <h2 id="title-contact">下一次合作，<br><span class="accent">从这里开始。</span></h2>
+            <p>欢迎交流项目与合作机会。<br>联系邮箱与作品集地址待填写。</p>
+            <div class="panel-bottom"><span>邮箱 / GitHub / 作品集链接待填写</span></div>
+          </article>
+        </div>
+      </div>
+      <div class="carousel-controls"><button id="previous" aria-label="上一个模块">←</button><span id="page-status" role="status" aria-live="polite" aria-atomic="true">01 / 05 · 个人简介</span><button id="next" aria-label="下一个模块">→</button></div>
+    </section>
+  </main>
+  <footer><span>交互原型 V1 · 简历内容待填写</span><span>DESIGNED TO EXPLORE <span class="footer-star">✳</span></span></footer>
+  <noscript><p class="error-note">请启用 JavaScript 查看交互简历。</p></noscript>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
